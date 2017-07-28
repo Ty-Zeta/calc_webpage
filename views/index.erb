@@ -1,9 +1,11 @@
 Please select a function
 
-<form>
-    <input type = "radio" name = "calc" value = "add" > Addition
-    <input type = "radio" name = "calc" value = "sub" > Subtraction
-    <input type = "radio" name = "calc" value = "mult" > Multiplication
-    <input type = "radio" name = "calc" value = "div" > Division
-    <input type = "submit">
+<form method = "post" action = "/function">
+    <input type = "radio" name = "calc" value = 'add' > Addition
+    <input type = "radio" name = "calc" value = 'sub' > Subtraction
+    <input type = "radio" name = "calc" value = 'mult' > Multiplication
+    <input type = "radio" name = "calc" value = 'div' > Division
+    <input type = 'number' min = '1' max = '10000' name = 'num1'>
+	<input type = 'number' min = '1' max = '10000' name = 'num2'>
+    <input type = "submit" value = "Do the thing!"/> 
 </form>
